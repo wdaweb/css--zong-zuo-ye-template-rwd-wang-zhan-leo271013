@@ -367,15 +367,24 @@
     let he = `0px`
     let on = 0
     let totopon = 0
+    let cd = 0
 
     burger.onclick = () => {
-      if (window.getComputedStyle(menu).getPropertyValue("height") === `0px` && he === `0px`) {
-        menu.style.height = `330px`
-      } else if (window.getComputedStyle(menu).getPropertyValue("height") === `0px` && he !== `0px`) {
-        menu.style.height = he
-      } else {
-        he = window.getComputedStyle(menu).getPropertyValue("height")
-        menu.style.height = `0px`
+      setTimeout(() => {
+        cd = 0
+      }, 300)
+      if (cd === 0) {
+        if (window.getComputedStyle(menu).getPropertyValue("height") === `0px` && he === `0px`) {
+          cd = 1
+          menu.style.height = `330px`
+        } else if (window.getComputedStyle(menu).getPropertyValue("height") === `0px` && he !== `0px`) {
+          cd = 1
+          menu.style.height = he
+        } else {
+          cd = 1
+          he = window.getComputedStyle(menu).getPropertyValue("height")
+          menu.style.height = `0px`
+        }
       }
     }
 
