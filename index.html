@@ -14,7 +14,11 @@
   <title>Document</title>
 </head>
 
-<body>
+<body onresize="seth()">
+  <div id="higher">
+    <span>Tattoo Studio</span>
+    <span><i class="icofont-calendar"></i> Call for Appointment (+123) 234-567-890</span>
+  </div>
   <div id="topbar">
     <input id="bar" type="checkbox">
     <input id="pages" type="checkbox" class="bn">
@@ -28,7 +32,7 @@
     </label>
     <ul id="menu">
       <li class="one">HOME</li>
-      <li class="one">
+      <li class="one" id="hpg">
         PAGES
         <label for="pages" class="plus" id="page">+</label>
       </li>
@@ -37,7 +41,7 @@
         <li>APPOINTMENT</li>
         <li>FAQ</li>
         <li>404</li>
-        <li>GALLERY PAGES
+        <li id="hgp">GALLERY PAGES
           <label for="gallerypages" class="plus" id="gallerypage">+</label>
         </li>
         <ul id="ul3">
@@ -47,7 +51,7 @@
         </ul>
         <li>CONTACT PAGE</li>
       </ul>
-      <li class="one">
+      <li class="one" id="hsv">
         SERVICES
         <label for="servicess" class="plus" id="services">+</label>
       </li>
@@ -55,7 +59,7 @@
         <li>SERVICES</li>
         <li>SERVICE DETAILS</li>
       </ul>
-      <li class="one">
+      <li class="one" id="har">
         ARTISTS
         <label for="artists" class="plus" id="artist">+</label>
       </li>
@@ -63,7 +67,7 @@
         <li>ARTISTS</li>
         <li>ARTIST DETAILS</li>
       </ul>
-      <li class="one">
+      <li class="one" id="hbl">
         BLOG
         <label for="blogs" class="plus" id="blog">+</label>
       </li>
@@ -106,24 +110,35 @@
       </div>
     </div>
     <div id="intro">
-      <p>Welcome to inkira Tattoo Studio</p>
-      <h3>ABOUT <span style="color: #cda885;">STUDIO</span></h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque quaerat modi accusamus, deserunt
-        quos iusto beatae facilis expedita quisquam molestiae harum distinctio, vero mollitia, corporis repellat.</p>
-      <br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus repellat blanditiis non tenetur modi. Lorem
-        ipsum dolor sit amet, consectetur adipisicing elit. Natus repellat blanditiis non tenetur modi.</p>
-      <br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque quaerat modi accusamus, deserunt
-        quos iusto beatae facilis expedita quisquam molestiae harum distinctio, vero mollitia, corporis repellat.</p>
-      <br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque quaerat modi accusamus, deserunt
-        quos iusto beatae facilis expedita quisquam molestiae harum distinctio, vero mollitia, corporis repellat.</p>
-      <img src="./imgs/about-us.png" alt="">
+      <div id="flexbox2">
+        <div>
+          <p>Welcome to inkira Tattoo Studio</p>
+          <h3>ABOUT <span style="color: #cda885;">STUDIO</span></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque quaerat modi accusamus, deserunt
+            quos iusto beatae facilis expedita quisquam molestiae harum distinctio, vero mollitia, corporis repellat.
+          </p>
+          <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus repellat blanditiis non tenetur modi. Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit. Natus repellat blanditiis non tenetur modi.</p>
+          <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque quaerat modi accusamus, deserunt
+            quos iusto beatae facilis expedita quisquam molestiae harum distinctio, vero mollitia, corporis repellat.
+          </p>
+          <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloremque quaerat modi accusamus, deserunt
+            quos iusto beatae facilis expedita quisquam molestiae harum distinctio, vero mollitia, corporis repellat.
+          </p>
+        </div>
+        <div style="font-size: 0;">
+          <img src="./imgs/about-us.png" alt="">
+        </div>
+      </div>
+
     </div>
     <div id="MaA">
-      <h2>Make an Appointment</h2>
-      <a href="">Book Appointment Now</a>
+      <img src="./imgs/appointment.png" alt="">
+      <h2>Make an <br id="csee"> Appointment</h2>
+      <a href="" id="ban">Book Appointment Now</a>
     </div>
     <div id="WCU">
       <div class="wow animate__fadeInUp">
@@ -131,61 +146,75 @@
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
           nibh euismod tincidunt ut laoreet dolore magna.</p>
       </div>
-      <div class="box wow animate__fadeInUp" style="margin-top: 80px">
-        <i class="icofont icofont-businessman"></i>
-        <h4 style="color: #CDA885;margin: 20px">EXPERT ARTISTS</h4>
-        <p>Lorem ipsum dolors item amet coti adipisicing elt, sed do eimd at.</p>
-      </div>
-      <div class="box wow animate__fadeInUp">
-        <i class="icofont icofont-gears"></i>
-        <h4 style="color: #CDA885;margin: 20px">PAINLESS WORK</h4>
-        <p>Lorem ipsum dolors item amet coti adipisicing elt, sed do eimd at.</p>
-      </div>
-      <div class="box wow animate__fadeInUp">
-        <i class="icofont icofont-money-bag"></i>
-        <h4 style="color: #CDA885;margin: 20px">AFFORDABLE COST</h4>
-        <p>Lorem ipsum dolors item amet coti adipisicing elt, sed do eimd at.</p>
-      </div>
-      <div class="box wow animate__fadeInUp">
-        <i class="icofont-heart-beat-alt"></i>
-        <h4 style="color: #CDA885;margin: 20px">CLEANLINESS</h4>
-        <p>Lorem ipsum dolors item amet coti adipisicing elt, sed do eimd at.</p>
+      <div id="flexbox5">
+        <div class="box wow animate__fadeInUp" style="margin-top: 80px">
+          <i class="icofont icofont-businessman"></i>
+          <h4 style="color: #CDA885;margin: 20px 0">EXPERT ARTISTS</h4>
+          <p>Lorem ipsum dolors item amet coti adipisicing elt, sed do eimd at.</p>
+        </div>
+        <div class="box wow animate__fadeInUp" style="margin-top: 80px">
+          <i class="icofont icofont-gears"></i>
+          <h4 style="color: #CDA885;margin: 20px 0">PAINLESS WORK</h4>
+          <p>Lorem ipsum dolors item amet coti adipisicing elt, sed do eimd at.</p>
+        </div>
+        <div class="box wow animate__fadeInUp" style="margin-top: 80px">
+          <i class="icofont icofont-money-bag"></i>
+          <h4 style="color: #CDA885;margin: 20px 0">AFFORDABLE COST</h4>
+          <p>Lorem ipsum dolors item amet coti adipisicing elt, sed do eimd at.</p>
+        </div>
+        <div class="box wow animate__fadeInUp" style="margin-top: 80px">
+          <i class="icofont-heart-beat-alt"></i>
+          <h4 style="color: #CDA885;margin: 20px 0">CLEANLINESS</h4>
+          <p>Lorem ipsum dolors item amet coti adipisicing elt, sed do eimd at.</p>
+        </div>
       </div>
     </div>
     <div id="WWD">
       <h2 style="margin-bottom: 20px;">WHAT WE DO</h2>
       <p style="margin-bottom: 80px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna.</p>
-      <div>
-        <h4>Tattooing</h4>
-        <div><i class="icofont icofont-checked"></i></div>
-        <p style="margin-bottom: 60px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-      </div>
-      <div>
-        <h4>Piercing</h4>
-        <div><i class="icofont icofont-checked"></i></div>
-        <p style="margin-bottom: 60px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-      </div>
-      <div>
-        <h4>Tattoo cover up</h4>
-        <div><i class="icofont icofont-checked"></i></div>
-        <p style="margin-bottom: 60px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-      </div>
-      <img src="./imgs/feature.png" alt="" style="margin-bottom: 20px;">
-      <div>
-        <h4>Tattoo design</h4>
-        <div style="float: left;"><i class="icofont icofont-checked"></i></div>
-        <p style="margin-bottom: 60px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-      </div>
-      <div>
-        <h4>Permanent Makeup</h4>
-        <div style="float: left;"><i class="icofont icofont-checked"></i></div>
-        <p style="margin-bottom: 60px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-      </div>
-      <div>
-        <h4>Laser Removal</h4>
-        <div style="float: left;"><i class="icofont icofont-checked"></i></div>
-        <p style="margin-bottom: 60px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <div id="bflex">
+        <div class="flexbox4">
+          <div>
+            <h4>Tattooing</h4>
+            <div class="lbox"><i class="icofont icofont-checked"></i></div>
+            <p style="margin-bottom: 60px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+          </div>
+          <div>
+            <h4>Piercing</h4>
+            <div class="lbox"><i class="icofont icofont-checked"></i></div>
+            <p style="margin-bottom: 60px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+          </div>
+          <div>
+            <h4>Tattoo cover up</h4>
+            <div class="lbox"><i class="icofont icofont-checked"></i></div>
+            <p style="margin-bottom: 60px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+          </div>
+        </div>
+        <img src="./imgs/feature.png" alt="" style="margin-bottom: 20px;">
+        <div class="flexbox4">
+          <div>
+            <h4>Tattoo design</h4>
+            <div style="float: left;" class="lbox"><i class="icofont icofont-checked"></i></div>
+            <p style="margin-bottom: 60px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+          </div>
+          <div>
+            <h4>Permanent Makeup</h4>
+            <div style="float: left;" class="lbox"><i class="icofont icofont-checked"></i></div>
+            <p style="margin-bottom: 60px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+          </div>
+          <div>
+            <h4>Laser Removal</h4>
+            <div style="float: left;" class="lbox"><i class="icofont icofont-checked"></i></div>
+            <p style="margin-bottom: 60px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+          </div>
+        </div>
       </div>
       <a href="" class="wow animate__fadeInUp">All SERVICES</a>
     </div>
@@ -194,56 +223,61 @@
       <p style="margin-bottom: 80px;" class="wow animate__zoomIn">Lorem ipsum dolor sit amet, consectetuer adipiscing
         elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna.</p>
-      <div class="artP wow animate__zoomIn">
-        <img src="./imgs/team_1.png" alt="" width="100%" style="margin-top: 30px; margin-bottom: 20px;">
-        <h2>Charlie Marsh</h2>
-        <a href=""><i class="icofont-facebook" style="line-height: 1.5rem;"></i></a>
-        <a href=""><i class="icofont-twitter" style="line-height: 1.5rem;"></i></a>
-        <a href=""><i class="icofont-favourite" style="line-height: 1.5rem;"></i></a>
-        <a href=""><i class="icofont-instagram" style="line-height: 1.5rem;"></i></a>
-      </div>
-      <div class="artP wow animate__zoomIn">
-        <img src="./imgs/team_2.png" alt="" width="100%" style="margin-top: 30px; margin-bottom: 20px;">
-        <h2>Kimberly</h2>
-        <a href=""><i class="icofont-facebook" style="line-height: 1.5rem;"></i></a>
-        <a href=""><i class="icofont-twitter" style="line-height: 1.5rem;"></i></a>
-        <a href=""><i class="icofont-favourite" style="line-height: 1.5rem;"></i></a>
-        <a href=""><i class="icofont-instagram" style="line-height: 1.5rem;"></i></a>
-      </div>
-      <div class="artP wow animate__zoomIn" style="margin-bottom: 80px;">
-        <img src="./imgs/team_3.png" alt="" width="100%" style="margin-top: 30px; margin-bottom: 20px;">
-        <h2>Payton Stewart</h2>
-        <a href=""><i class="icofont-facebook" style="line-height: 1.5rem;"></i></a>
-        <a href=""><i class="icofont-twitter" style="line-height: 1.5rem;"></i></a>
-        <a href=""><i class="icofont-favourite" style="line-height: 1.5rem;"></i></a>
-        <a href=""><i class="icofont-instagram" style="line-height: 1.5rem;"></i></a>
+      <div id="flexbox">
+        <div class="artP wow animate__zoomIn">
+          <img src="./imgs/team_1.png" alt="" width="100%" style="margin-top: 30px; margin-bottom: 20px;">
+          <h2>Charlie Marsh</h2>
+          <a href=""><i class="icofont-facebook" style="line-height: 1.5rem;"></i></a>
+          <a href=""><i class="icofont-twitter" style="line-height: 1.5rem;"></i></a>
+          <a href=""><i class="icofont-favourite" style="line-height: 1.5rem;"></i></a>
+          <a href=""><i class="icofont-instagram" style="line-height: 1.5rem;"></i></a>
+        </div>
+        <div class="artP wow animate__zoomIn">
+          <img src="./imgs/team_2.png" alt="" width="100%" style="margin-top: 30px; margin-bottom: 20px;">
+          <h2>Kimberly</h2>
+          <a href=""><i class="icofont-facebook" style="line-height: 1.5rem;"></i></a>
+          <a href=""><i class="icofont-twitter" style="line-height: 1.5rem;"></i></a>
+          <a href=""><i class="icofont-favourite" style="line-height: 1.5rem;"></i></a>
+          <a href=""><i class="icofont-instagram" style="line-height: 1.5rem;"></i></a>
+        </div>
+        <div class="artP wow animate__zoomIn">
+          <img src="./imgs/team_3.png" alt="" width="100%" style="margin-top: 30px; margin-bottom: 20px;">
+          <h2>Payton Stewart</h2>
+          <a href=""><i class="icofont-facebook" style="line-height: 1.5rem;"></i></a>
+          <a href=""><i class="icofont-twitter" style="line-height: 1.5rem;"></i></a>
+          <a href=""><i class="icofont-favourite" style="line-height: 1.5rem;"></i></a>
+          <a href=""><i class="icofont-instagram" style="line-height: 1.5rem;"></i></a>
+        </div>
       </div>
       <a href="" id="aas" class="box wow animate__fadeInUp">All ARTIST</a>
     </div>
     <div id="TEST">
       <h2 class="wow animate__fadeInUp">TESTIMONIALS</h2>
-      <p style="margin-bottom: 80px;" class="wow animate__fadeInUp">Lorem ipsum dolor sit amet, consectetuer adipiscing
+      <p id="fkup" class="wow animate__fadeInUp">Lorem ipsum dolor sit amet, consectetuer adipiscing
         elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna.</p>
-      <div class="TEST__box wow animate__zoomIn">
-        <img src="./imgs/testimonial_01.png" alt="">
-        <h3>Lionel Todd</h3>
-        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
-        <i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i
-          class="icofont-star"></i><i class="icofont-star"></i>
-      </div>
-      <div class="TEST__box wow animate__zoomIn">
-        <img src="./imgs/testimonial_02.png" alt="">
-        <h3>Richard Mason</h3>
-        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
-        <i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i>
-      </div>
-      <div class="TEST__box wow animate__zoomIn">
-        <img src="./imgs/testimonial_03.png" alt="">
-        <h3>Nina West</h3>
-        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
-        <i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i
-          class="icofont-star"></i><i class="icofont-star"></i>
+      <div id="flexbox6">
+        <div class="TEST__box wow animate__zoomIn">
+          <img src="./imgs/testimonial_01.png" alt="">
+          <h3>Lionel Todd</h3>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+          <i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i
+            class="icofont-star"></i><i class="icofont-star"></i>
+        </div>
+        <div class="TEST__box wow animate__zoomIn">
+          <img src="./imgs/testimonial_02.png" alt="">
+          <h3>Richard Mason</h3>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+          <i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i
+            class="icofont-star"></i>
+        </div>
+        <div class="TEST__box wow animate__zoomIn">
+          <img src="./imgs/testimonial_03.png" alt="">
+          <h3>Nina West</h3>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+          <i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i
+            class="icofont-star"></i><i class="icofont-star"></i>
+        </div>
       </div>
     </div>
     <div id="LNAB">
@@ -251,81 +285,88 @@
       <p style="margin-bottom: 40px;" class="wow animate__fadeInUp">Lorem ipsum dolor sit amet, consectetuer adipiscing
         elit, sed diam nonummy
         nibh euismod tincidunt ut laoreet dolore magna.</p>
-      <div class="box wow animate__zoomIn">
-        <img src="./imgs/blog01.jpg" alt="" width="100%" style="margin-bottom: 30px;">
-        <span>15</span>
-        <span>DEC</span>
-        <h3>TATTOOING FOR BEGINNERS: 10 SIMPLE STEPS</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias adipisci voluptate qui laudantium vitae.
-        </p>
-        <a href="">Read More →</a>
-      </div>
-      <div class="box wow animate__zoomIn">
-        <img src="./imgs/blog02.jpg" alt="" width="100%" style="margin-bottom: 30px;">
-        <span>12</span>
-        <span>OCT</span>
-        <h3>11 PIECES OF ADVICE FOR GETTING YOUR FIRST TATTOO</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias adipisci voluptate qui laudantium vitae.
-        </p>
-        <a href="">Read More →</a>
-      </div>
-      <div class="box wow animate__zoomIn">
-        <img src="./imgs/blog03.jpg" alt="" width="100%" style="margin-bottom: 30px;">
-        <span>28</span>
-        <span>May</span>
-        <h3>WHAT TO DO BEFORE GETTING A TATTOO TO EASE THE PAIN</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias adipisci voluptate qui laudantium vitae.
-        </p>
-        <a href="">Read More →</a>
+      <div id="flexbox7">
+        <div class="box wow animate__zoomIn">
+          <img src="./imgs/blog01.jpg" alt="" width="100%" style="margin-bottom: 30px;">
+          <span>15</span>
+          <span>DEC</span>
+          <h3>TATTOOING FOR BEGINNERS: 10 SIMPLE STEPS</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias adipisci voluptate qui laudantium
+            vitae.
+          </p>
+          <a href="">Read More →</a>
+        </div>
+        <div class="box wow animate__zoomIn">
+          <img src="./imgs/blog02.jpg" alt="" width="100%" style="margin-bottom: 30px;">
+          <span>12</span>
+          <span>OCT</span>
+          <h3>11 PIECES OF ADVICE FOR GETTING YOUR FIRST TATTOO</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias adipisci voluptate qui laudantium
+            vitae.
+          </p>
+          <a href="">Read More →</a>
+        </div>
+        <div class="box wow animate__zoomIn">
+          <img src="./imgs/blog03.jpg" alt="" width="100%" style="margin-bottom: 30px;">
+          <span>28</span>
+          <span>May</span>
+          <h3>WHAT TO DO BEFORE GETTING A TATTOO TO EASE THE PAIN</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias adipisci voluptate qui laudantium
+            vitae.
+          </p>
+          <a href="">Read More →</a>
+        </div>
       </div>
     </div>
   </div>
   <!-- ********************************************** -->
   <div id="bottom">
     <div id="footer" class="wow animate__fadeInUp">
-      <div>
-        <img src="./imgs/logo-footer.png" alt="" style="margin-bottom: 40px;">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut delectus consectetur omnis, alias nulla
-          repudiandae quasi non at ullam, vel officiis unde cum ea.</p>
-      </div>
-      <div class="oao">
-        <h2 style="margin: 20px 0;">Contact Info</h2>
-        <div style="position: relative;">
-          <i class="icofont-google-map" style="position: absolute;top: -10px;"></i>
-          <p>PO Box 16122, Collins Street, Victoria 8007, USA</p>
+      <div id="flexbox8">
+        <div>
+          <img src="./imgs/logo-footer.png" alt="" style="margin-bottom: 40px;">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut delectus consectetur omnis, alias nulla
+            repudiandae quasi non at ullam, vel officiis unde cum ea.</p>
         </div>
-        <div style="margin-bottom: 15px;">
-          <i class="icofont-phone"></i>
-          <a href="tel:+12001234567">+1 200 123 4567</a><br>
-          <a href="tel:+12001234567">+1 200 123 4567</a><br>
+        <div class="oao">
+          <h2 style="margin: 20px 0;">Contact Info</h2>
+          <div style="position: relative;">
+            <i class="icofont-google-map" style="position: absolute;top: -10px;"></i>
+            <p>PO Box 16122, Collins Street, Victoria 8007, USA</p>
+          </div>
+          <div style="margin-bottom: 15px;">
+            <i class="icofont-phone"></i>
+            <a href="tel:+12001234567">+1 200 123 4567</a><br>
+            <a href="tel:+12001234567">+1 200 123 4567</a><br>
+          </div>
+          <div style="position: relative;">
+            <i class="icofont-email"></i></i>
+            <a href="mailto:contact@yoursite.com">contact@yoursite.com</a><br>
+            <a href="mailto:contact@yoursite.com">contact@yoursite.com</a>
+          </div>
         </div>
-        <div style="position: relative;">
-          <i class="icofont-email"></i></i>
-          <a href="mailto:contact@yoursite.com">contact@yoursite.com</a><br>
-          <a href="mailto:contact@yoursite.com">contact@yoursite.com</a>
+        <div class="OAO">
+          <h2 style="margin: 20px 0;">Useful Links</h2>
+          <a href="">About Us</a><br>
+          <a href="">Our Services</a><br>
+          <a href="">Our Artists</a><br>
+          <a href="">Gallery</a><br>
+          <a href="">Appointment</a><br>
+          <a href="">Contact Us</a><br>
         </div>
-      </div>
-      <div class="OAO">
-        <h2 style="margin: 20px 0;">Useful Links</h2>
-        <a href="">About Us</a><br>
-        <a href="">Our Services</a><br>
-        <a href="">Our Artists</a><br>
-        <a href="">Gallery</a><br>
-        <a href="">Appointment</a><br>
-        <a href="">Contact Us</a><br>
-      </div>
-      <div id="fu">
-        <h2 style="margin: 20px 0;">Follow Us</h2>
-        <a href=""><i class="icofont-facebook"></i></a>
-        <a href=""><i class="icofont-twitter"></i></a>
-        <a href=""><i class="icofont-favourite"></i></a>
-        <a href=""><i class="icofont-instagram"></i></a>
+        <div id="fu">
+          <h2 style="margin: 20px 0;">Follow Us</h2>
+          <a href=""><i class="icofont-facebook"></i></a>
+          <a href=""><i class="icofont-twitter"></i></a>
+          <a href=""><i class="icofont-favourite"></i></a>
+          <a href=""><i class="icofont-instagram"></i></a>
+        </div>
       </div>
     </div>
     <p id="end">© inkira | All rights reserved</p>
   </div>
 
-  <script src="./js/wow.js"></script>
+  <script src="./js/wow.min.js"></script>
   <script>
     var wow = new WOW(
       {
@@ -351,6 +392,7 @@
     const blogs = document.getElementById('blogs')
     const bar = document.getElementById('bar')
     const burger = document.getElementById('burger')
+    const ul2 = document.getElementById('ul2')
     const ul3 = document.getElementById('ul3')
     const totop = document.getElementById('totop')
     const reada = document.getElementById('reada')
@@ -363,11 +405,20 @@
     const imgp1 = document.getElementById('imgp1')
     const Left = document.getElementById('Left')
     const Right = document.getElementById('Right')
+    const hpg = document.getElementById('hpg')
+    const hgp = document.getElementById('hgp')
+    const hsv = document.getElementById('hsv')
+    const har = document.getElementById('har')
+    const hbl = document.getElementById('hbl')
 
     let he = `0px`
     let on = 0
     let totopon = 0
     let cd = 0
+
+    const seth = () => {
+      window.location.replace(window.location.href);
+    }
 
     burger.onclick = () => {
       setTimeout(() => {
@@ -492,6 +543,7 @@
       if (ms % 30 === 0) {
         Slide()
       }
+
     }, 100)
 
     Left.onclick = () => {
@@ -503,6 +555,126 @@
       Slide()
       ms = 0
     }
+
+    hpg.addEventListener('mouseenter', () => {
+      if (window.getComputedStyle(menu).getPropertyValue("width").substr(0, (window.getComputedStyle(menu).getPropertyValue("width").length - 2)) > 767) {
+        ul2.style.display = `block`
+      }
+    })
+
+    hpg.addEventListener('mouseleave', () => {
+      if (window.getComputedStyle(menu).getPropertyValue("width").substr(0, (window.getComputedStyle(menu).getPropertyValue("width").length - 2)) > 767) {
+        ul2.style.display = `none`
+      }
+    })
+
+    ul2.addEventListener('mouseenter', () => {
+      if (window.getComputedStyle(menu).getPropertyValue("width").substr(0, (window.getComputedStyle(menu).getPropertyValue("width").length - 2)) > 767) {
+        ul2.style.display = `block`
+      }
+    })
+
+    ul2.addEventListener('mouseleave', () => {
+      if (window.getComputedStyle(menu).getPropertyValue("width").substr(0, (window.getComputedStyle(menu).getPropertyValue("width").length - 2)) > 767) {
+        ul2.style.display = `none`
+      }
+    })
+
+    hgp.addEventListener('mouseenter', () => {
+      if (window.getComputedStyle(menu).getPropertyValue("width").substr(0, (window.getComputedStyle(menu).getPropertyValue("width").length - 2)) > 767) {
+        ul3.style.display = `block`
+      }
+    })
+
+    hgp.addEventListener('mouseleave', () => {
+      if (window.getComputedStyle(menu).getPropertyValue("width").substr(0, (window.getComputedStyle(menu).getPropertyValue("width").length - 2)) > 767) {
+        ul3.style.display = `none`
+      }
+    })
+
+    ul3.addEventListener('mouseenter', () => {
+      if (window.getComputedStyle(menu).getPropertyValue("width").substr(0, (window.getComputedStyle(menu).getPropertyValue("width").length - 2)) > 767) {
+        ul3.style.display = `block`
+      }
+    })
+
+    ul3.addEventListener('mouseleave', () => {
+      if (window.getComputedStyle(menu).getPropertyValue("width").substr(0, (window.getComputedStyle(menu).getPropertyValue("width").length - 2)) > 767) {
+        ul3.style.display = `none`
+      }
+    })
+
+    hsv.addEventListener('mouseenter', () => {
+      if (window.getComputedStyle(menu).getPropertyValue("width").substr(0, (window.getComputedStyle(menu).getPropertyValue("width").length - 2)) > 767) {
+        ul4.style.display = `block`
+      }
+    })
+
+    hsv.addEventListener('mouseleave', () => {
+      if (window.getComputedStyle(menu).getPropertyValue("width").substr(0, (window.getComputedStyle(menu).getPropertyValue("width").length - 2)) > 767) {
+        ul4.style.display = `none`
+      }
+    })
+
+    ul4.addEventListener('mouseenter', () => {
+      if (window.getComputedStyle(menu).getPropertyValue("width").substr(0, (window.getComputedStyle(menu).getPropertyValue("width").length - 2)) > 767) {
+        ul4.style.display = `block`
+      }
+    })
+
+    ul4.addEventListener('mouseleave', () => {
+      if (window.getComputedStyle(menu).getPropertyValue("width").substr(0, (window.getComputedStyle(menu).getPropertyValue("width").length - 2)) > 767) {
+        ul4.style.display = `none`
+      }
+    })
+
+    har.addEventListener('mouseenter', () => {
+      if (window.getComputedStyle(menu).getPropertyValue("width").substr(0, (window.getComputedStyle(menu).getPropertyValue("width").length - 2)) > 767) {
+        ul5.style.display = `block`
+      }
+    })
+
+    har.addEventListener('mouseleave', () => {
+      if (window.getComputedStyle(menu).getPropertyValue("width").substr(0, (window.getComputedStyle(menu).getPropertyValue("width").length - 2)) > 767) {
+        ul5.style.display = `none`
+      }
+    })
+
+    ul5.addEventListener('mouseenter', () => {
+      if (window.getComputedStyle(menu).getPropertyValue("width").substr(0, (window.getComputedStyle(menu).getPropertyValue("width").length - 2)) > 767) {
+        ul5.style.display = `block`
+      }
+    })
+
+    ul5.addEventListener('mouseleave', () => {
+      if (window.getComputedStyle(menu).getPropertyValue("width").substr(0, (window.getComputedStyle(menu).getPropertyValue("width").length - 2)) > 767) {
+        ul5.style.display = `none`
+      }
+    })
+
+    hbl.addEventListener('mouseenter', () => {
+      if (window.getComputedStyle(menu).getPropertyValue("width").substr(0, (window.getComputedStyle(menu).getPropertyValue("width").length - 2)) > 767) {
+        ul6.style.display = `block`
+      }
+    })
+
+    hbl.addEventListener('mouseleave', () => {
+      if (window.getComputedStyle(menu).getPropertyValue("width").substr(0, (window.getComputedStyle(menu).getPropertyValue("width").length - 2)) > 767) {
+        ul6.style.display = `none`
+      }
+    })
+
+    ul6.addEventListener('mouseenter', () => {
+      if (window.getComputedStyle(menu).getPropertyValue("width").substr(0, (window.getComputedStyle(menu).getPropertyValue("width").length - 2)) > 767) {
+        ul6.style.display = `block`
+      }
+    })
+
+    ul6.addEventListener('mouseleave', () => {
+      if (window.getComputedStyle(menu).getPropertyValue("width").substr(0, (window.getComputedStyle(menu).getPropertyValue("width").length - 2)) > 767) {
+        ul6.style.display = `none`
+      }
+    })
 
   </script>
 </body>
