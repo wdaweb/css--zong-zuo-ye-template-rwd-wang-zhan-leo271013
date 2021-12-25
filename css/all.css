@@ -577,7 +577,7 @@ a {
   width: 35px;
   height: 35px;
   background-color: white;
-  margin: 15px;
+  margin: 7px;
   text-align: center;
 }
 
@@ -610,7 +610,7 @@ a {
   margin-bottom: 40px;
   border-radius: 5px;
   color: #5e5e5e;
-  padding: 0 70px;
+  padding: 0 10%;
 }
 
 .artP h2 {
